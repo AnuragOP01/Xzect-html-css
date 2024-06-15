@@ -7,8 +7,8 @@
 };
 
 
-.flex1{
+.flex{
     display:flex;
-    flex-grow: unset;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 100px;
 }
