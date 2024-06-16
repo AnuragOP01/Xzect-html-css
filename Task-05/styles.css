@@ -54,3 +54,12 @@ header{
     text-decoration: underline;
     cursor: pointer;
 }
+.page{
+    display: flex;
+    flex-wrap: wrap;
+}
+.space{
+    height: 80vh;
+    width: 33vw;
+    border: 2px solid white;
+}
