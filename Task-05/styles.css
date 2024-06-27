@@ -134,6 +134,7 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
+        display: none;
     }
     .mobnav>.item{
         padding: 10px;
@@ -147,6 +148,6 @@ header{
         background-color: #0d6efd;
     }
     #checked-nav:checked ~ .mobnav{
-        display: none;
+        display: flex;
     }
 }
