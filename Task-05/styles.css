@@ -7,6 +7,7 @@ header{
     display: flex;
     justify-content: start;
     position: sticky;
+    flex-direction: column;
     top: 0;
     background: linear-gradient(135deg, #321971 0%, #4a22b1 100%);
     width: 100%;
@@ -69,6 +70,19 @@ header{
     height: 90vh;
     border: 2px solid white;
 }
+#checked-nav{
+    content: "";
+    appearance: none;
+    height: 40px;
+    width: 100px;
+    margin-top: 5px;
+    border-radius: 40px;
+    background-color: #767682;
+    display: none;
+}
+.mobnav{
+    display: none;
+}
 
 
 
@@ -99,7 +113,40 @@ header{
     
 }
 @media screen and (max-width: 750px) {
+    .flex{
+        justify-content: space-evenly;
+        padding: 5px 0;
+    }
+    
     .flex2{
+        display: none;
+    }
+    .right-btn{
+        display: none;
+    }
+    #checked-nav{
+        display: inline-block;
+        position: absolute;
+        right: 10vw;
+    }
+    
+    .mobnav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobnav>.item{
+        padding: 10px;
+    }
+    .mobnav>.item:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        color: orange;
+    }
+    #checked-nav:checked{
+        background-color: #0d6efd;
+    }
+    #checked-nav:checked ~ .mobnav{
         display: none;
     }
 }
