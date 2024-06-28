@@ -156,9 +156,12 @@ header{
 .page{
     flex-direction: column;
 }
-.man-img img{
+.man-img .img{
     height: 92vh;
-    max-width: 375px;
+    max-width: 370px;
+    background-image: url(https://portm-html.vercel.app/assets/img/hero_img.png);
+    background-size: cover;
+    background-repeat: round;
     border: none;
     z-index: 0;
 }
@@ -218,6 +221,10 @@ header{
 }
 .man-img{
     justify-content: center;
+    align-items: center;
+}
+.img{
+    justify-content: end;
 }
 @media screen and (min-width:750px) {
     .wid{
