@@ -83,7 +83,7 @@ header{
 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     header{
         justify-content: start;
     }
@@ -220,10 +220,14 @@ header{
     justify-content: center;
 }
 @media screen and (min-width:750px) {
-    
+    .wid{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+    }
     .home-cont{
         min-width: 750px;
-        max-width: 800px;
         height: 50vh;
         justify-content: space-between;
         align-items: center;
