@@ -71,7 +71,7 @@ header{
     width: 100px;
     margin-top: 5px;
     border-radius: 40px;
-    background-color: #767682;
+    background-color: #0d6efd;
     display: none;
     z-index: 1;
 }
@@ -126,8 +126,8 @@ header{
         color: beige;
     }
     #checked-nav:hover{
-        background-color: #76768264;
-        
+        background-color: #0d6efd;
+        filter: brightness(120%);
     }
     
     .mobnav{
@@ -146,7 +146,7 @@ header{
         color: orange;
     }
     #checked-nav:checked{
-        background-color: #0d6efd;
+        background-color: #319946;
     }
     #checked-nav:checked ~ .mobnav{
         display: flex;
