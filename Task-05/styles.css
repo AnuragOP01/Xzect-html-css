@@ -216,3 +216,18 @@ header{
     justify-content: space-around;
     align-items: center;
 }
+.man-img{
+    justify-content: center;
+}
+@media screen and (min-width:750px) {
+    
+    .home-cont{
+        min-width: 750px;
+        max-width: 800px;
+        height: 50vh;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+    }
+    
+}
