@@ -12,6 +12,7 @@ header{
     background: linear-gradient(135deg, #321971 0%, #4a22b1 100%);
     width: 100%;
     margin-right: 0;
+    z-index: 1;
 }
 .nav{
     width: 90vw;
@@ -62,14 +63,7 @@ header{
     text-decoration: underline;
     cursor: pointer;
 }
-.page{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-}
-.space{
-    height: 90vh;
-    border: 2px solid white;
-}
+
 #checked-nav{
     content: "";
     appearance: none;
@@ -79,6 +73,7 @@ header{
     border-radius: 40px;
     background-color: #767682;
     display: none;
+    z-index: 1;
 }
 .mobnav{
     display: none;
@@ -156,4 +151,68 @@ header{
     #checked-nav:checked ~ .mobnav{
         display: flex;
     }
+}
+
+.page{
+    flex-direction: column;
+}
+.man-img img{
+    height: 92vh;
+    max-width: 375px;
+    border: none;
+    z-index: 0;
+}
+.align{
+    flex-direction: column;
+}
+.home-cont{
+    justify-content: space-between;
+}
+.space{
+    position: relative;
+    gap: 20px;
+}
+.space>div>h1{
+    text-align: end;
+    color: white;
+    font-weight: 800;
+
+}
+.space>div>h3{
+    text-align: end;
+}
+.space>ul>.skill:nth-child(1)>h2{
+    color: orangered;
+    text-align: start;
+    font-size: 1.3em;
+}
+.space>ul>.skill>h3{
+    text-align: start;
+    font-size: 14px;
+}
+.space>ul>.skill:nth-child(2)>h3{
+    color: white;
+}
+.space>ul{
+    width: 100%;
+}
+.space>ul>li:nth-last-child(n+2){
+    width: 100%;
+    height: max-content;
+    list-style-type: disc;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: #950dfdb5;
+}
+.space>ul{
+    position: relative;
+    gap: 20px;
+}
+.fa{
+    color: white;
+    height: 40px;
+}
+.space>ul>.skill:nth-child(3){
+    justify-content: space-around;
+    align-items: center;
 }
