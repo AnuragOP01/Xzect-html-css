@@ -37,18 +37,13 @@
             z-index: 1;
             }
             #checked-nav{
-                display: inline-block;
-                position: absolute;
-                right: 10vw;
-                color: beige;
-                }
-            #checked-nav:hover{
-                background-color: #0d6efd;
-                filter: brightness(120%);
+            display: inline-block;
+            position: absolute;
+            right: 10vw;
+            top: 0px;
+            color: beige;
             }
-            #checked-nav:checked{
-            background-color: #319946;
-            }
+            
             #checked-nav:checked ~ .block{
                 display: flex;
             }
@@ -59,23 +54,7 @@
         <header>
             <nav>
                 <div class="container-fluid bg-primary text-white bg-gradient">
-                    <div class="mobile d-block d-md-none">
-                        <div class="row">
-                            <div class="col w-25"><img src="https://portm-html.vercel.app/assets/img/logo.svg" alt=""></div>
-                            <div class="nav col">
-                                <input type="checkbox" id="checked-nav">
-                                <div class="block">
-                                <div class="row">Home</div>
-                                <div class="row">About</div>
-                                <div class="row">Portfolio</div>
-                                <div class="row">Blog</div>
-                                <div class="row">Pages</div>
-                                <div class="row">Contact</div>
-                                <div class="row btn btn-primary">Hire Me</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="row py-2 d-none d-md-block">
                     <div class="row">
                         <div class="col"><img src="https://portm-html.vercel.app/assets/img/logo.svg" alt=""></div>
@@ -88,9 +67,29 @@
                         <div class="col btn btn-primary">Hire Me</div>
                     </div>
                 </div>
+                <div class="d-md-none py-2">
+                    <div class="col w-25"><img src="https://portm-html.vercel.app/assets/img/logo.svg" alt=""></div>
+                </div>
+                <div class="mobile d-block d-md-none">
+                   
+                        <div class="nav col">
+                            <input type="checkbox" id="checked-nav">
+                            <div class="block container-md flex align">
+                            <div class="h1 text-center">Home</div>
+                            <div class="h1">About</div>
+                            <div class="h1">Portfolio</div>
+                            <div class="h1">Blog</div>
+                            <div class="h1">Pages</div>
+                            <div class="h1">Contact</div>
+                            <div class="h1 btn btn-primary">Hire Me</div>
+                            </div>
+                        </div>
+                </div>
                 </div>
             </nav>
         </header>
+
+        
         <div class="flex container-sm ">
             <div class="flex align">
                 <ul class="flex align">
