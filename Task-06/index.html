@@ -19,7 +19,7 @@
             }
             .align{
                 flex-direction: column;
-                align-items: center;
+                align-items: normal;
             }
             .block{
                 display: none;
@@ -43,10 +43,37 @@
             top: 0px;
             color: beige;
             }
-            
+            .bgsec{
+                background: linear-gradient(135deg, #0a58ca 0%, #ae0aca 100%);
+                align-items: center;
+            }
             #checked-nav:checked ~ .block{
                 display: flex;
             }
+            
+            .img{
+                width: 400px;
+                height: 92vh;
+                background-image: url(https://portm-html.vercel.app/assets/img/hero_img.png);
+                background-size: cover;
+                background-repeat: round;
+            }
+            
+            @media screen and (min-width:750px) {
+    .wid{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+    }
+    .home-cont{
+        min-width: 750px;
+        height: 50vh;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+    }
+}
         </style>
 </head>
 <body>
@@ -90,8 +117,18 @@
         </header>
 
         
-        <div class="flex container-sm ">
-            <div class="flex align">
+        <section class="flex page align bgsec container-fluid">
+            <div class="flex align man-img col-5">
+                <div class="img flex align col-5 justify-content-end">
+                    <h1 style="text-align: center; font-weight: 800;font-size: 41px;">Anurag Rathore</h1>
+                    <div>
+                        <h3 style="color: white; text-align: center;">Do you have a project: <a href="" style="color: orangered;">Lets talk</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="wid">
+            <div class="flex home-cont">
+            <div class="flex space align">
                 <ul class="flex align">
                     <li class="skill">
                         <h2>UI/UX Designer</h2>
@@ -109,7 +146,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="flex align">
+            <div class="flex space align">
                 <div>
                     <h1>100%</h1>
                     <h3>client satisfaction</h3>
@@ -124,6 +161,8 @@
                 </div>
             </div>
         </div>
+    </div>
+        </section>
     </div>
 </body>
 </html>
