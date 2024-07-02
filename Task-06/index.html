@@ -12,6 +12,7 @@
                 box-sizing: border-box;
                 margin: 0;
                 padding: 0;
+            
             }
             .flex{
                 display: flex;
@@ -52,28 +53,21 @@
             }
             
             .img{
-                width: 400px;
+                width: 380px;
                 height: 92vh;
                 background-image: url(https://portm-html.vercel.app/assets/img/hero_img.png);
                 background-size: cover;
                 background-repeat: round;
             }
+            .home{
+                background: linear-gradient(135deg, #0a58ca 0%, #ae0aca 100%);
+            }
             
             @media screen and (min-width:750px) {
-    .wid{
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        position: absolute;
-    }
-    .home-cont{
-        min-width: 750px;
-        height: 50vh;
-        justify-content: space-between;
-        align-items: center;
-        position: absolute;
-    }
-}
+            .wid{
+            position: absolute;
+            }
+            }
         </style>
 </head>
 <body>
@@ -103,12 +97,12 @@
                             <input type="checkbox" id="checked-nav">
                             <div class="block container-md flex align">
                             <div class="h1 text-center">Home</div>
-                            <div class="h1">About</div>
-                            <div class="h1">Portfolio</div>
-                            <div class="h1">Blog</div>
-                            <div class="h1">Pages</div>
-                            <div class="h1">Contact</div>
-                            <div class="h1 btn btn-primary">Hire Me</div>
+                            <div class="h1 text-center">About</div>
+                            <div class="h1 text-center">Portfolio</div>
+                            <div class="h1 text-center">Blog</div>
+                            <div class="h1 text-center">Pages</div>
+                            <div class="h1 text-center">Contact</div>
+                            <div class="h1 text-center btn btn-primary">Hire Me</div>
                             </div>
                         </div>
                 </div>
@@ -118,25 +112,25 @@
 
         
         <section class="flex page align bgsec container-fluid">
-            <div class="flex align man-img col-5">
-                <div class="img flex align col-5 justify-content-end">
+            <div class="flex align man-img">
+                <div class="img flex align justify-content-end">
                     <h1 style="text-align: center; font-weight: 800;font-size: 41px;">Anurag Rathore</h1>
                     <div>
                         <h3 style="color: white; text-align: center;">Do you have a project: <a href="" style="color: orangered;">Lets talk</a></h3>
                     </div>
                 </div>
             </div>
-            <div class="wid">
-            <div class="flex home-cont">
+            <div class="wid container-xxl">
+            <div class="flex home-cont container-xxl justify-content-between">
             <div class="flex space align">
-                <ul class="flex align">
+                <ul class="flex align text-white">
                     <li class="skill">
                         <h2>UI/UX Designer</h2>
                         <h3>Based In India</h3>
                     </li>
                     <li class="skill">
                         <h2>Say hello to</h2>
-                        <h3>ranurag404@gmail.com</h3>
+                        <h3 style="font-size: 14px;">ranurag404@gmail.com</h3>
                     </li>
                     <li class="skill flex">
                         <a href="#" class="fa fa-facebook"> </a> 
@@ -146,7 +140,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="flex space align">
+            <div class="flex space align text-white">
                 <div>
                     <h1>100%</h1>
                     <h3>client satisfaction</h3>
