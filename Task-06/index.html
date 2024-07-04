@@ -45,10 +45,6 @@
             top: 0px;
             color: beige;
             }
-            .bgsec{
-                background: linear-gradient(135deg, #0a58ca 0%, #ae0aca 100%);
-                align-items: center;
-            }
             #checked-nav:checked ~ .block{
                 display: flex;
             }
@@ -60,9 +56,9 @@
                 background-repeat: round;
             }
             .home{
-                background: linear-gradient(135deg, #0a58ca 0%, #ae0aca 100%);
+                background-image: url(https://portm-html.vercel.app/assets/img/bg/hero_bg.svg);
+                background-size: cover;
             }
-            
             @media screen and (min-width:750px) {
             .wid{
             position: absolute;
@@ -74,7 +70,7 @@
     <div class="home">
         <header>
             <nav>
-                <div class="container-fluid bg-primary text-white bg-gradient">
+                <div class="container-fluid text-white bg-gradient">
                     
                     <div class="row py-2 d-none d-md-block">
                     <div class="row">
@@ -85,7 +81,7 @@
                         <div class="col">Blog</div>
                         <div class="col">Pages</div>
                         <div class="col">Contact</div>
-                        <div class="col btn btn-primary">Hire Me</div>
+                        <div class="col btn btn-danger">Hire Me</div>
                     </div>
                 </div>
                 <div class="d-md-none py-2">
@@ -111,7 +107,7 @@
         </header>
 
         
-        <section class="flex page align bgsec container-fluid">
+        <section class="flex page align align-items-center container-fluid">
             <div class="flex align man-img">
                 <div class="img flex align justify-content-end">
                     <h1 style="text-align: center; font-weight: 800;font-size: 41px;">Anurag Rathore</h1>
@@ -156,7 +152,7 @@
             </div>
         </div>
     </div>
-        </section>
+    </section>
     </div>
 </body>
 </html>
